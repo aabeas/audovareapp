@@ -1,0 +1,18 @@
+<div class="row-fluid">
+  <div class="col-md-6 col md-offset-3" id="profile">
+    <h2><%= @title %></h2>
+
+    <% user = current_user %>
+
+    <table class="table">
+      <tr>
+        <th>User Name</th>
+        <td><%= user.username %></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><%= user.email %></td>
+      </tr>
+    </table>
+  </div>
+</div>

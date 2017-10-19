@@ -22,10 +22,10 @@
           <ul class="nav navbar-nav mr-auto>
             <li class="nav-item"><%= link_to 'Home', '', class: 'nav-link' %></li>
             <% if !logged_in? %>
-            <li class="nav-item"><%= link_to 'Login', login_path, class: 'nav-link' %></li>
+              <li class="nav-item"><%= link_to 'Login', login_path, class: 'nav-link' %></li>
             <% else %>
-            <li class="nav-item"><%= link_to 'Profile', profile_path, class: 'nav-link' %></li>
-            <li class="nav-item"><%= link_to 'Logout', logout_path, method: :delete, class: 'nav-link' %></li>
+              <li class="nav-item"><%= link_to 'Profile', profile_path, class: 'nav-link' %></li>
+              <li class="nav-item"><%= link_to 'Logout', logout_path, method: :delete, class: 'nav-link' %></li>
             <% end %>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -49,7 +49,7 @@
       <div class="container text-center">
         <span>
           &copy; 2017 Audovare |
-          <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="#">Jobs</a>
+          <a href="/about">About</a> &middot; <a href="/contact">Contact</a> &middot; <a href="/jobs">Jobs</a>
         </span>
       </div>
     </footer>

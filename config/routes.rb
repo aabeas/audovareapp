@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  # get 'sessions/new'
 
   root 'pages#index'
 
+  get 'sessions/new'
   get 'pages/index'
-  get 'profile', to: 'pages#show'
+
+  get 'profile' => 'pages#profile'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+  get 'jobs' => 'pages#jobs'
+
+  # get 'profile', to: 'pages#show'
   get 'login', to: 'sessions#new'
   delete 'logout', to: 'sessions#destroy'
   post 'login', to: 'sessions#create'
