@@ -29,6 +29,7 @@ gem 'popper_js', '~> 1.11.1'
 # gem 'httparty'
 gem 'jquery-ui-rails'
 gem 'momentjs-rails'
+# gem 'rails-footnotes', '~> 4.1', '>= 4.1.8', :group => :development
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-  before_action :must_login, only: [:show]
+  # before_action :must_login, only: [:show]
+
+before_action :authorize, only: [:show]
 
   def profile
     @title = 'Profile';
