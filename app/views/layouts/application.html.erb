@@ -31,10 +31,16 @@
               <li class="nav-link">Logged in as <%= current_user.email %></li>
             <% end %>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text">
-            <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Search</button>
+          <form class="row-fluid">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+                <button class="btn btn-success" type="button" aria-label="Search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
           </form>
+
+
         </div>
       </nav>
       <section>
